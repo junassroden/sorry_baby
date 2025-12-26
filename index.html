@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Envelope</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Dear Gelay.</strong>
+            <p>
+              I'm very sorry to what I have done today. I want to sincerely
+              apologize sa aking ginawa sayo. I saw your repost and I'm sorry baby,
+              nasaktan kita ng sobra. Let me make it up to you.
+              I will take this as lesson and I'll never let this happen again.
+            </p>
+          </div>
+        </div>
+
+        <!-- HEART -->
+        <div class="heart"></div>
+      </div>
+    </div>
+
+    <button class="gift-btn">My Gift</button>
+    <div class="bottom-images">
+  <img src="bubu.png" alt="Bear with rose">
+  <img src="bubu1.png" alt="Bear with bouquet">
+</div>
+  </div>
+
+  <script>
+  const envelope = document.querySelector(".envelope-wrapper");
+  const heart = document.querySelector(".heart");
+  const giftBtn = document.querySelector(".gift-btn");
+
+  heart.addEventListener("click", () => {
+    envelope.classList.toggle("flap");
+  });
+
+  giftBtn.addEventListener("click", () => {
+    window.location.href = "flower.html?autoplay=true";
+  });
+
+  </script>
+
+</body>
+</html>
